@@ -22,37 +22,43 @@ public class Role {
 	@Column(name = "id_role", unique = true, nullable = false)
 	private Long idRole;
 	
+	@NotNull	 	
+	private String nombre;
+	
+
 	@ManyToMany(mappedBy="roles")
 	private Collection<Organizador> organizadores;
-	
-	@NotNull	 	
-	private String nombreRole;
+
 
 	public Long getIdRole() {
 		return idRole;
 	}
 
+
 	public void setIdRole(Long idRole) {
 		this.idRole = idRole;
 	}
+
+
+	public String getNombreRole() {
+		return nombre;
+	}
+
+
+	public void setNombreRole(String nombre) {
+		this.nombre = nombre;
+	}
+
 
 	public Collection<Organizador> getOrganizadores() {
 		return organizadores;
 	}
 
+
 	public void setOrganizadores(Collection<Organizador> organizadores) {
 		this.organizadores = organizadores;
 	}
-
-	public String getNombreRole() {
-		return nombreRole;
-	}
-
-	public void setNombreRole(String nombreRole) {
-		this.nombreRole = nombreRole;
-	}
-
-
-		
+	
+	
 
 }

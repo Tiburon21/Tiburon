@@ -27,16 +27,16 @@ public class EventoTest {
 	OrganizadorRepository organizadorRepository;
 	@Test
 	public void guardarEventoTest(){
-		Organizador organizador = new Organizador();
-		organizador.setIdOrganizador(1);
-		
-		Evento evento = new Evento();
-		evento.setNombreEvento("ACER");
-		evento.setSalon(1);
-		evento.setFechaEvento(new Date());
-		evento.setOrganizador(organizador);
-		
-		eventoRepository.save(evento);
+//		Organizador organizador = new Organizador();
+//		organizador.setIdOrganizador(1);
+//		
+//		Evento evento = new Evento();
+//		evento.setNombreEvento("ACER");
+//		evento.setSalon(1);
+//		evento.setFechaEvento(new Date());
+//		evento.setOrganizador(organizador);
+//		
+//		eventoRepository.save(evento);
 	}
 	
 

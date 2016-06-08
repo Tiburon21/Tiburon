@@ -26,18 +26,18 @@ public class VisitanteTest {
 	
 	@Test
 	public void guardarVisitanteTest(){
-		Evento evento = new Evento();
-		evento.setIdEvento(1);
-		
-		Visitante visitante = new Visitante();
-		visitante.setNombre("Vanesa");
-		visitante.setApellidoPaterno("Galicia");
-		visitante.setApellidoMaterno("Galvan");
-		visitante.setFechaNac("02-OCT-10");
-		visitante.setEmail("VaneG@gmail.com");
-		visitante.setTelefono(5612218);
-		//visitante.setEventos(eventos);
-		visitanteRepository.save(visitante);
+//		Evento evento = new Evento();
+//		evento.setIdEvento(1);
+//		
+//		Visitante visitante = new Visitante();
+//		visitante.setNombre("Vanesa");
+//		visitante.setApellidoPaterno("Galicia");
+//		visitante.setApellidoMaterno("Galvan");
+//		visitante.setFechaNac("02-OCT-10");
+//		visitante.setEmail("VaneG@gmail.com");
+//		visitante.setTelefono(5612218);
+//		//visitante.setEventos(eventos);
+//		visitanteRepository.save(visitante);
 	}
 
 }
