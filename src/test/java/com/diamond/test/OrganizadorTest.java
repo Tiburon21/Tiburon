@@ -29,11 +29,11 @@ public class OrganizadorTest {
 	@Autowired
 	OrganizadorRepository organizadorRepository;
 	
-//	@Autowired
-//	EventoRepository eventoRepository;
-//	
-//	@Autowired
-//	RoleRepository roleRepository;
+	@Autowired
+	EventoRepository eventoRepository;
+	
+	@Autowired
+	RoleRepository roleRepository;
 	
 	@Test
 	public void guardarOrganizadorEventoTest(){
@@ -51,25 +51,25 @@ public class OrganizadorTest {
 		organizador.setUsuario("IvonneAmor");
 		organizador.setPassword("pulgas");
 		
-//		Evento evento = new Evento();
-//		evento.setNombreEvento("UAsetFechaEventoCM");
-//		evento.setSalon(2);
-//		evento.setFechaEvento(new Date());
-//		evento.setOrganizador(organizador);//el join entre tablas para ejecutar la prueba
-//		
-//		Collection<Organizador> organizadores = new ArrayList<Organizador>();
-//		
-//		Role role = new Role();
-//		role.setNombre("administador");
-//		role.setOrganizadores(organizadores);
-//		
-//		Collection<Role> roles = new ArrayList<Role>();
-//		roles.add(role);
-//		organizador.setRoles(roles);
-//		roleRepository.save(role);
+		Evento evento = new Evento();
+		evento.setNombreEvento("UAsetFechaEventoCM");
+		evento.setSalon(2);
+		evento.setFechaEvento(new Date());
+		evento.setOrganizador(organizador);//el join entre tablas para ejecutar la prueba
 		
+		Collection<Organizador> organizadores = new ArrayList<Organizador>();
+		
+		Role role = new Role();
+		role.setNombre("administador");
+		role.setOrganizadores(organizadores);
+		
+		Collection<Role> roles = new ArrayList<Role>();
+		roles.add(role);
+		organizador.setRoles(roles);
+		
+		roleRepository.save(role); 
 		organizadorRepository.save(organizador);
-//		eventoRepository.save(evento); 
+		eventoRepository.save(evento); 
 		
 		
 			
