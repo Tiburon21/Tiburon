@@ -44,7 +44,6 @@ public class OrganizadorTest {
 		organizador.setCalle("lomas de chapultepec");
 		organizador.setColonia("valle gomez");
 		organizador.setNumInt(9);
-		organizador.setNumExt(10);
 		organizador.setCp(15070);
 		organizador.setEmail("ivonneAmor@outlook.com");
 		organizador.setTelefono(56982132);
@@ -60,7 +59,7 @@ public class OrganizadorTest {
 		Collection<Organizador> organizadores = new ArrayList<Organizador>();
 		
 		Role role = new Role();
-		role.setNombre("administador");
+		role.setNombreRole("administrador");
 		role.setOrganizadores(organizadores);
 		
 		Collection<Role> roles = new ArrayList<Role>();

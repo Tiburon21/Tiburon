@@ -13,6 +13,7 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 
 
@@ -23,17 +24,26 @@ public class Organizador {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name = "id_organizador", unique = true, nullable = false)
 	private Integer idOrganizador;
+	@NotNull
 	private String nombre;
+	@NotNull
 	private String apellidoPaterno;
+	@NotNull
 	private String apellidoMaterno;
+	@NotNull
 	private String calle;
+	@NotNull
 	private String colonia;
 	private Integer numInt;
-	private Integer numExt;
+	@NotNull
 	private Integer cp;
+	@NotNull
 	private String email;
+	@NotNull
 	private Integer telefono;
+	@NotNull
 	private String usuario;
+	@NotNull
 	private String password;
 	
 	@OneToMany(mappedBy="organizador")
@@ -117,13 +127,6 @@ public class Organizador {
 		this.numInt = numInt;
 	}
 
-	public Integer getNumExt() {
-		return numExt;
-	}
-
-	public void setNumExt(Integer numExt) {
-		this.numExt = numExt;
-	}
 
 	public Integer getCp() {
 		return cp;

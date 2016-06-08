@@ -12,6 +12,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 
 
@@ -23,8 +24,11 @@ public class Evento {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name = "id_evento", unique = true, nullable = false)
 	private Integer idEvento;
+	@NotNull
 	private String nombreEvento;
+	@NotNull
 	private Integer salon;
+	@NotNull
 	private Date fechaEvento;
 
 	/*map tabla organizador*/

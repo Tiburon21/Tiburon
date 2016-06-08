@@ -26,7 +26,7 @@ public class Role {
 	private Collection<Organizador> organizadores;
 	
 	@NotNull	 	
-	private String nombre;
+	private String nombreRole;
 
 	public Long getIdRole() {
 		return idRole;
@@ -44,15 +44,15 @@ public class Role {
 		this.organizadores = organizadores;
 	}
 
-	public String getNombre() {
-		return nombre;
+	public String getNombreRole() {
+		return nombreRole;
 	}
 
-	public void setNombre(String nombre) {
-		this.nombre = nombre;
+	public void setNombreRole(String nombreRole) {
+		this.nombreRole = nombreRole;
 	}
-	
 
-	
+
+		
 
 }

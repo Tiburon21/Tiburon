@@ -21,8 +21,8 @@ public class VisitanteTest {
 	@Autowired
 	VisitanteRepository visitanteRepository;
 	
-	@Autowired
-	EventoRepository eventoRepository;
+//	@Autowired
+//	EventoRepository eventoRepository;
 	
 	@Test
 	public void guardarVisitanteTest(){

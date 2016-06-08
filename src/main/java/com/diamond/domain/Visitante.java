@@ -11,6 +11,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 @Entity
 @Table(name="visitante")
@@ -20,11 +21,17 @@ public class Visitante {
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name = "id_visitante", unique = true, nullable = false)
 	private Long idVisitante;
+	@NotNull
 	private String nombre;
+	@NotNull
 	private String apellidoPaterno;
+	@NotNull
 	private String apellidoMaterno;
+	@NotNull
 	private String fechaNac;
+	@NotNull
 	private String email;
+	@NotNull
 	private Integer telefono;
 	
 	/*tabla visitante*/
